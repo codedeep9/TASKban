@@ -1,0 +1,376 @@
+@import url("general.css");
+
+.kanban{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    
+}
+
+.side-bar{
+    background-color: var(--side-bar-bg);
+}
+
+.container{
+    
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    height: 100vh;
+
+}
+
+.side-user{
+    width: 100%;
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+ion-icon[name="person-outline"]{
+    font-size: 2.2rem;
+    color: white;
+}
+ion-icon[name="logo-google-playstore"]{
+    font-size: 2.2rem;
+    /* color: white; */
+}
+
+.add-delete{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #ffffff1f;
+}
+
+
+
+.add-task:link,
+.add-task:visited{
+    text-align: center;
+    color: var(--main-text-color);
+    background-color: #7F55D6;
+    border-radius: 10px;
+    padding: 1rem ;
+    text-decoration: none;
+}
+
+.add-task:hover,
+.add-task:active{
+    
+    background-color: #763de9;
+    
+}
+
+.stages{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    padding-bottom: 3rem;
+   
+}
+
+.stages-heading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.different-stages{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+.stage{
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.indicator{
+    height: 10px;
+    width: 15px;
+   border-radius: 10px;
+} 
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: #228be6 ;
+}
+
+.yellow{
+    background-color: #fab005;
+}
+
+.green{
+    background-color:#37b24d;
+}
+
+.stage p{
+    font-size: 1.2rem;
+    color: var(--main-text-color);
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.help{
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-top: 1px solid #ffffff1f;
+}
+
+
+.main-body{
+    padding: 2rem 5rem;
+    
+}
+
+.main-nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-user{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.main-user img{
+    width: 10%;
+    border-radius: 50%;
+}
+
+.main-user h1{
+    color: var(--main-text-color);
+}
+
+.tasks{
+    padding: 5rem 0 0 2rem;
+}
+
+.task-nav-links{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #ffffff1f;
+
+}
+
+
+.tasks-nav-link{
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-left: 10px;
+    width: 50%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Task Sections */
+
+.overview{
+    padding-top: 20px;
+}
+
+.task-section{
+    /* display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem; */
+    /* overflow-x: scroll; */
+}
+
+.task-heading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task-heading h1{
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.task-heading #icon{
+    font-size: 2.4rem;
+    color: var(--main-text-color);
+}
+
+.add-cards{
+    margin-top: 20px;
+     display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    /* overflow-x: scroll; */
+}
+
+.cards{
+    min-width: 275px;
+    background-color: var(--side-bar-bg);
+    color: white;
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    margin-left: 10px;
+    padding: 2rem;
+    border-radius: 10px;
+    transition: all 0.5s;
+    /* overflow-x: scroll; */
+    
+    
+   
+    
+}
+
+.cards:hover{
+    scale: 1.02;
+}
+.tag{
+    padding: 5px;
+
+    border-radius: 10px;
+}
+
+/* .task-desc{
+    white-space: nowrap;
+    word-wrap: break-word;
+    display: inline-block;
+} */
+
+.task-btns{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+
+
+
+
+/* Task Form */
+.task-form{
+    height:100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(2, 2, 2, 0.711);
+    display: none;
+}
+
+.form{
+    min-width: 400px;
+    
+    min-height: 300px;
+    background-color: var(--side-bar-bg);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    border-radius: 10px;
+    padding-bottom: 5rem;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translateX(-50%);
+}
+
+.form-title{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.form-close{
+    font-size: 3.6rem;
+    justify-self: end;
+    cursor: pointer;
+}
+
+.form-title h1{
+    
+    grid-column: span 2;
+    justify-self: end;
+    transform: translateX(-20%);
+}
+
+.form input{
+    font-family: inherit;
+    font-size: 1.8rem;
+    width: 80%;
+    padding: 1.2rem 2rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #1F1D24;
+    color: var(--main-text-color);
+}
+
+textarea{
+    background-color: #1F1D24;
+    color: var(--main-text-color);
+    font-family: inherit;
+    border-radius: 10px;
+    width: 80%;
+    height: 50%;
+    padding: 1.2rem 2rem;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    resize: none;
+}
+
+.save,.save:focus{
+    width: 80%;
+    padding: 1.2rem;
+    background-color: #2f9e44;
+    color: var(--main-text-color);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.save:hover{
+    background-color: #37b24d;
+    cursor: pointer;
+}
+
+
+

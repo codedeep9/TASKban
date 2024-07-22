@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASKBAN- A modern task planner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/queries.css">
+    <script defer src="javascript/script.js"></script>
+</head>
+<body>
+   <section>
+        <div class="kanban">
+            <!-- Side Bar -->
+            <div class="side-bar">
+                <div class="container">
+                    <!-- Account icon -->
+                    <div class="side-user">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <ion-icon name="logo-google-playstore"></ion-icon>
+                    </div>
+                    <div class="add-delete">
+                        <!-- Add Task Button -->
+                        <a href="#" class="add-task teritory-heading add-task-btn">Add Task</a>
+
+                        <!-- Add Delete Button -->
+                        <a href="#" class="add-task teritory-heading" id="delete">Delete</a>
+                    </div>
+                    
+                    <div class="stages">
+                        <!-- Stage -heading -->
+                        <div class="stages-heading">
+                            <h1 class="teritory-heading">Stages</h1>
+                            <ion-icon name="add-outline" id="icon"></ion-icon>
+                        </div>
+
+                        <!-- different stages -->
+                        <div class="different-stages">
+                            <div class="stage">
+                                <!-- Not Started -->
+                                <div class="indicator red"></div>
+                                <p>Not Started</p>
+                            </div>
+                                <!--In Progress -->
+                            <div class="stage">
+                                <div class="indicator blue"></div>
+                                <p>In Progress</p>
+                            </div>  
+                            <!-- Testing -->
+                            <div class="stage">
+                                <div class="indicator yellow"></div>
+                                <p>Testing</p>
+                            </div>
+                            <!-- Completed -->
+                            <div class="stage">
+                                <div class="indicator green"></div>
+                                <p>Completed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                        <!-- Help and FeedBack -->
+                        <div class="help">
+                            <ion-icon name="help-buoy-outline" id="icon"></ion-icon>
+                            <p class="other-heading">Help & Feedbacks</p>
+                        </div>
+                </div>
+            </div>
+            <!-- Main Content -->
+            <div class="main-body">
+                <!-- Nav Bar -->
+                <nav class="main-nav-links">
+                    <h1 class="secondary-heading">TASKban</h1>
+                    <div class="main-user">
+                        <img src="images/user/artist-img.webp" alt="An user image">
+                        <h1 class="teritory-heading">Kate Jack</h1>
+                    </div>
+                </nav>
+
+                <!-- Body -->
+                <div class="tasks">
+                    <h1 class="primary-heading">My Tasks</h1>
+                    <!-- Task Nav -->
+                    <nav class="task-nav-links">
+                        <ul class="tasks-nav-link">
+                            <li class="other-heading"><a href="#" id="selected">Overview</a></li>
+                            <li class="other-heading"><a href="#" >Not Started</a></li>
+                            <li class="other-heading"><a href="#" >In Progress</a></li>
+                            <li class="other-heading"><a href="#">Testing</a></li>
+                            <li class="other-heading"><a href="#" >Completed</a></li>
+
+                        </ul>
+                    </nav>
+
+                    <!-- Task -->
+                    <!-- Overview Section -->
+                    <div class="overview grid grid--col4">
+                        <!-- Not Started Section -->
+                        
+                        <div class="task-section" category="1">
+                            <div class="task-heading">
+                                <h1 class="">Not Started</h1>
+                            </div>
+                            <div class="add-cards" category = "1">
+                                <!-- Card-1 -->
+                                <div class="cards" category="1">
+                                    <!-- Task Title -->
+                                    <h1 class="teritory-heading"></h1>
+                                    <!-- Tag -->
+                                    <div class="tag red">Not Started</div>
+                                    <!-- Task Desc -->
+                                    <p class="task-desc other-heading"></p>
+                                    <!-- Edit and Delete Buttons -->
+                                    <div class="task-btns">
+                                        <ion-icon name="pencil-outline" id="icon" class="edit-btn"></ion-icon>
+                                        <ion-icon name="trash-outline" id="icon" class="delete-btn"></ion-icon>
+                                    
+                                    </div>
+                                </div>
+                            
+
+                                
+                            </div>
+                            
+                           
+                        </div>
+
+                        <!-- In Progress Section -->
+                        
+                        <div class="task-section" category = "2">
+                            <div class="task-heading">
+                                <h1 class="">In progress</h1>
+                                <ion-icon name="add-outline" id="icon" category="2"></ion-icon>
+                            </div>
+                          
+                          <div class="add-cards" category = "2">
+                                 <!-- Card-1 -->
+                                <div class="cards" category="2">
+                                    <!-- Task Title -->
+                                    <h1 class="teritory-heading">Create Component</h1>
+                                    <!-- Tag -->
+                                    <div class="tag blue">In Progress</div>
+                                    <!-- Task Desc -->
+                                    <p class="task-desc other-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, rerum!</p>
+                                    <!-- Edit and Delete Buttons -->
+                                    <div class="task-btns">
+                                        <ion-icon name="pencil-outline" id="icon" class="edit-btn"></ion-icon>
+                                        <ion-icon name="trash-outline" id="icon" class="delete-btn"></ion-icon>
+                                    </div>
+                                </div>
+
+                                 
+                            </div>
+                        </div>
+
+                        <!-- testing Section -->
+                        
+                        <div class="task-section" category = "3">
+                            <div class="task-heading">
+                                <h1 class="">Testing</h1>
+                                <ion-icon name="add-outline" id="icon" category="3"></ion-icon>
+                            </div>
+                            <div class="add-cards" category = "3">
+                                <!-- Card-1 -->
+                                <div class="cards" category="3">
+                                    <!-- Task Title -->
+                                    <h1 class="teritory-heading">Create Component</h1>
+                                    <!-- Tag -->
+                                    <div class="tag yellow">Testing</div>
+                                    <!-- Task Desc -->
+                                    <p class="task-desc other-heading">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, harum!</p>
+                                    <!-- Edit and Delete Buttons -->
+                                    <div class="task-btns">
+                                        <ion-icon name="pencil-outline" id="icon" class="edit-btn"></ion-icon>
+                                        <ion-icon name="trash-outline" id="icon" class="delete-btn"></ion-icon>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+
+                         <!-- Completed Section -->
+                        <div class="task-section" category = "4">
+                            <div class="task-heading">
+                                <h1 >Completed</h1>
+                                <ion-icon name="add-outline" id="icon" category="4"></ion-icon>
+                            </div>
+                            <div class="add-cards" category = "4">
+                                <!-- Card-1 -->
+                                <div class="cards" category="4">
+                                    <!-- Task Title -->
+                                    <h1 class="teritory-heading">Create Component</h1>
+                                    <!-- Tag -->
+                                    <div class="tag green">Completed</div>
+                                    <!-- Task Desc -->
+                                    <p class="task-desc other-heading">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, harum!</p>
+                                    <!-- Edit and Delete Buttons -->
+                                    <div class="task-btns">
+                                        <ion-icon name="pencil-outline" id="icon" class="edit-btn"></ion-icon>
+                                        <ion-icon name="trash-outline" id="icon" class="delete-btn"></ion-icon>
+                                    </div>
+                                </div>
+
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ADD TASK FORM -->
+        <div class="task-form">
+            <div class="form">
+                <div class="form-title">
+                    <h1 class="secondary-heading">Add Task</h1>
+                    <ion-icon name="close-outline" class="form-close"></ion-icon>
+                </div>
+                <input type="text" placeholder="Task title">
+                <textarea name="" id="" placeholder="Task Description"></textarea>
+                <button class="save">Save</button>
+            </div>
+        </div>
+   </section>
+    
+
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

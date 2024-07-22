@@ -1,0 +1,157 @@
+/* ******************************************** */
+ /**********************1200 px*********************** */
+@media(max-width : 75em){
+    .tasks-nav-link {
+        width: 70%;
+        }
+    .grid--col4{
+        grid-template-columns: 1fr;
+    }
+
+    .add-cards{
+        flex-direction: row;
+    }
+}
+ /*************************************************************** */
+
+ /* ******************************************** */
+ /**********************950 px*********************** */
+@media(max-width : 59.3em){
+    .tasks-nav-link {
+        width: 100%;
+        }
+    
+}
+ /*************************************************************** */
+
+  /* ******************************************** */
+ /**********************800 px*********************** */
+@media(max-width : 50em){
+    .kanban{
+        grid-template-columns: 1fr;
+    }
+
+    .side-bar{
+        height: 70px;
+    }
+    
+    .container{
+        padding: 10px;
+        
+        height: 70px;
+        width: 100%;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+       
+        z-index: 10;
+        background-color: var(--side-bar-bg);
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    
+    .side-user{
+        display: none;
+    }
+
+    .add-delete{
+        flex-direction: row;
+        /* justify-content: space-between; */
+        border: none;
+        padding: 0;
+        
+    }
+
+    .add-task-btn{
+        width: 100%;
+    }
+
+    #delete{
+        display: none;
+    }
+    .stages{
+        display: none;
+    }
+
+    .help{
+        display: none;
+    }
+
+    .main-body{
+        margin-top: 80px;
+    }
+    
+}
+ /*************************************************************** */
+
+
+  /* ******************************************** */
+ /**********************600 px*********************** */
+@media(max-width : 37.5em){
+    .main-body {
+        padding: 1rem 2rem;
+    }
+
+    .task-heading{
+        justify-content: space-between;
+    }
+
+    .add-cards{
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: start; */
+    }
+    
+    .cards{
+        max-width: 500px;
+        margin: 0;
+    }
+    
+}
+ /*************************************************************** */
+
+  /* ******************************************** */
+ /**********************500 px*********************** */
+@media(max-width:31.25em){
+    
+    
+    /* .tasks-nav-link a:link, .tasks-nav-link a:visited {
+        
+        font-size: 1.2rem;
+        
+    }
+
+    .tasks-nav-link a:hover, .tasks-nav-link a:active {
+        
+        font-size: 1.4rem;
+        
+    } */
+
+    .tasks{
+        padding-left: 0;
+    }
+
+    .tasks h1.primary-heading{
+        text-align: center;
+    }
+
+    .tasks-nav-link{
+    
+        justify-content: center;
+        margin: 2rem 0;
+    }
+
+    
+
+    
+    .task-heading h1 {
+        
+        font-size: 2.2rem;
+    }
+
+    .form{
+        min-width: 300px;
+    }
+}
+ /*************************************************************** */

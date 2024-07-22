@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-color:#828187;
+    --main-text-color:#fff;
+    --hover-color:#C4C3C5;
+    --side-bar-bg:#2B2931;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-size: 62.5%
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1F1D24;
+    color:var(--text-color);
+    margin-bottom: 20px;
+}
+
+.primary-heading{
+    font-size: 4.6rem;
+    color: var(--main-text-color);
+    font-weight: 600;
+
+}
+
+.secondary-heading{
+    /* color: #fff; */
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.teritory-heading{
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.other-heading{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.grid{
+    display: grid;
+    gap: 5rem;
+}
+
+.grid--col2{
+    grid-template-columns: repeat(2,1fr);
+}
+
+.grid--col3{
+    grid-template-columns: repeat(3,1fr);
+}
+
+.grid--col4{
+    grid-template-columns: repeat(4,1fr);
+}
+
+.grid--col5{
+    grid-template-columns: repeat(5,1fr);
+}
+
+#delete{
+    background-color: orangered;
+}
+#delete:hover,
+#delete:active{
+    background-color: red;
+}
+
+#icon{
+    font-size: 1.8rem;
+    cursor: pointer;
+   
+}
+
+.tasks-nav-link a:link,
+.tasks-nav-link a:visited{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 300;
+    transition: all 0.3s;
+}
+
+/* .tasks-nav-link a:hover,
+.tasks-nav-link a:active{
+    color: var(--main-text-color);
+    font-size: 1.6rem;
+} */
+
+#selected{
+    color: var(--main-text-color);
+    font-size: 1.6rem;
+}
+
+#show{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
